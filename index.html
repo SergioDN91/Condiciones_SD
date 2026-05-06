@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condiciones</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <section class="card">
+    <h2>1. Estilo de Imagen</h2>
+    <div class="img-container">
+        <img id="imagen-toggle" src="./assets/img/Pokeball.jpg" alt="Pokebola">
+    </div>
+    <p class="hint">Haz clic en la imagen</p>
+</section>
+
+        <section class="card">
+            <h2>2. Tienda de Stickers</h2>
+            <p>Selecciona tus favoritos (Máx. 10)</p>
+            <div class="stickers-grid">
+                <div class="sticker-item">
+                    <img src="./assets/img/charmander.png" alt="">
+                    <input type="number" id="input-1" value="0" min="0">
+                </div>
+                <div class="sticker-item">
+                    <img src="./assets/img/bulbasaur.png" alt="">
+                    <input type="number" id="input-2" value="0" min="0">
+                </div>
+                <div class="sticker-item">
+                    <img src="./assets/img/squirtle.png" alt="">
+                    <input type="number" id="input-3" value="0" min="0">
+                </div>
+            </div>
+            <button id="btn-verificar-stickers">Verificar Pedido</button>
+            <p id="resultado-stickers" class="mensaje"></p>
+        </section>
+
+        <section class="card">
+            <h2>3. Acceso Seguro</h2>
+            <div class="password-group">
+                <select id="select-1">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                </select>
+                <select id="select-2">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                </select>
+                <select id="select-3">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
+                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
+                </select>
+            </div>
+            <button id="btn-ingresar-pass">Ingresar</button>
+            <p id="resultado-pass" class="mensaje"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
